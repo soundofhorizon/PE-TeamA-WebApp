@@ -205,18 +205,18 @@
 					});
 				</script>
 				<script>
-                    var slc_elm = document.querySelector("#selbox");
-                    slc_elm.addEventListener("focus", function(elm){
-                            if(elm.currentTarget.options.length >= 11){
-                                    elm.currentTarget.size = "10";
-                            }
-                    }, false);
-                    slc_elm.addEventListener("blur", function(elm){
-                            elm.currentTarget.size = "1";
-                    }, false);
-                    slc_elm.addEventListener("change", function(elm){
-                            elm.currentTarget.blur();
-                    }, false);
+				    var slc_elm = document.querySelector("#selbox");
+				    slc_elm.addEventListener("focus", function(elm){
+					    if(elm.currentTarget.options.length >= 11){
+						    elm.currentTarget.size = "10";
+					    }
+				    }, false);
+				    slc_elm.addEventListener("blur", function(elm){
+					    elm.currentTarget.size = "1";
+				    }, false);
+				    slc_elm.addEventListener("change", function(elm){
+					    elm.currentTarget.blur();
+				    }, false);
 				</script>
 				<?php
 					$emp = '';
@@ -295,67 +295,67 @@
 						}
 						echo "</table>\n";
 						}else if($row==0 AND $emp !=null){
-                            echo '<p id="na">該当するデータはありません</p>';
+                            				echo '<p id="na">該当するデータはありません</p>';
 						}
 					?>
 				</div>
 				<br><br>
 				<script type="text/javascript">
-                    function change() {
-                        if (document.getElementById("selbox")) {
-                            selboxValue = document.getElementById("selbox").value;
-                            if(selboxValue == "all"){
-                                //ボタンを表示
-                                document.getElementById("sub").style.display = "";
-                                //文字1を非表示
-                                document.getElementById("txt1").style.display = "none";
-                                //input1を非表示
-                                document.getElementById("da").style.display = "none";
-                                //文字2を非表示
-                                document.getElementById("txt2").style.display = "none";
-                                //input2を非表示
-                                document.getElementById("search_text").style.display = "none";
-                                document.getElementById("na").style.display = "none";
-                            }else if (selboxValue == "date") {
-                                //ボタンを表示
-                                document.getElementById("sub").style.display = "";
-                                //文字1を表示
-                                document.getElementById("txt1").style.display = "";
-                                //input1を表示
-                                document.getElementById("da").style.display = "";
-                                //文字2を非表示
-                                document.getElementById("txt2").style.display = "none";
-                                //input2を非表示
-                                document.getElementById("search_text").style.display = "none";
-                                document.getElementById("na").style.display = "none";
-                            } else if (selboxValue == "word") {
-                                //ボタンを表示
-                                document.getElementById("sub").style.display = "";
-                                //文字2を表示
-                                document.getElementById("txt2").style.display = "";
-                                //input2を表示
-                                document.getElementById("search_text").style.display = "";
-                                //文字1を非表示
-                                document.getElementById("txt1").style.display = "none";
-                                //input1を非表示
-                                document.getElementById("da").style.display = "none";
-                                document.getElementById("na").style.display = "none";
-                            }else if (selboxValue != null) {
-                                //ボタンを表示
-                                document.getElementById("sub").style.display = "";
-                                //文字2を表示
-                                document.getElementById("txt2").style.display = "none";
-                                //input2を表示
-                                document.getElementById("search_text").style.display = "none";
-                                //文字1を非表示
-                                document.getElementById("txt1").style.display = "none";
-                                //input1を非表示
-                                document.getElementById("da").style.display = "none";
-                                //input1を非表示
-                                document.getElementById("na").style.display = "none";
-                            }
-                        }
-                    }
+				    function change() {
+					if (document.getElementById("selbox")) {
+					    selboxValue = document.getElementById("selbox").value;
+					    if(selboxValue == "all"){
+						//ボタンを表示
+						document.getElementById("sub").style.display = "";
+						//文字1を非表示
+						document.getElementById("txt1").style.display = "none";
+						//input1を非表示
+						document.getElementById("da").style.display = "none";
+						//文字2を非表示
+						document.getElementById("txt2").style.display = "none";
+						//input2を非表示
+						document.getElementById("search_text").style.display = "none";
+						document.getElementById("na").style.display = "none";
+					    }else if (selboxValue == "date") {
+						//ボタンを表示
+						document.getElementById("sub").style.display = "";
+						//文字1を表示
+						document.getElementById("txt1").style.display = "";
+						//input1を表示
+						document.getElementById("da").style.display = "";
+						//文字2を非表示
+						document.getElementById("txt2").style.display = "none";
+						//input2を非表示
+						document.getElementById("search_text").style.display = "none";
+						document.getElementById("na").style.display = "none";
+					    } else if (selboxValue == "word") {
+						//ボタンを表示
+						document.getElementById("sub").style.display = "";
+						//文字2を表示
+						document.getElementById("txt2").style.display = "";
+						//input2を表示
+						document.getElementById("search_text").style.display = "";
+						//文字1を非表示
+						document.getElementById("txt1").style.display = "none";
+						//input1を非表示
+						document.getElementById("da").style.display = "none";
+						document.getElementById("na").style.display = "none";
+					    }else if (selboxValue != null) {
+						//ボタンを表示
+						document.getElementById("sub").style.display = "";
+						//文字2を表示
+						document.getElementById("txt2").style.display = "none";
+						//input2を表示
+						document.getElementById("search_text").style.display = "none";
+						//文字1を非表示
+						document.getElementById("txt1").style.display = "none";
+						//input1を非表示
+						document.getElementById("da").style.display = "none";
+						//input1を非表示
+						document.getElementById("na").style.display = "none";
+					    }
+					}
+				    }
 				</script>
 				<div class = "pp3">
 				    <h2 id = "pp">プライバシーポリシー</h2>
